@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="projects">
@@ -39,21 +40,21 @@
 <main>
   <section>
     <div class="container">
-      <div class="filter-tabs reveal">
+      <div class="filter-tabs" data-aos="fade-up">
         <button class="filter-tab active" data-filter="all">All</button>
         <button class="filter-tab" data-filter="research">Research</button>
         <button class="filter-tab" data-filter="presentation">Presentations</button>
       </div>
 
       <div class="grid grid-2">
-        <div class="card project-card reveal" data-category="research">
+        <div class="card project-card" data-category="research" data-aos="fade-up" data-aos-delay="0">
           <span class="tag" style="margin-bottom:1rem;display:inline-block;">Research</span>
           <h3>Consumer Preference & Online Shopping Research</h3>
           <p>Studied student shopping preferences, preferred platforms, spending patterns, payment methods and product categories.</p>
           <p>Organized and analyzed survey-based data using Excel and presented findings through charts and visual summaries.</p>
         </div>
 
-        <div class="card project-card reveal" data-category="presentation">
+        <div class="card project-card" data-category="presentation" data-aos="fade-up" data-aos-delay="100">
           <span class="tag" style="margin-bottom:1rem;display:inline-block;">Presentation</span>
           <h3>Marketing & Business Presentations</h3>
           <p>Prepared academic work on Digital Marketing, Marketing Analytics, AI in Business, BCG Matrix, Marketing Research and Consumer Behaviour.</p>
@@ -67,10 +68,11 @@
 <footer class="footer">
   <div class="container">
     <p>Astha Shukla — BBA Marketing, Allenhouse Business School, Kanpur</p>
-    <p>&copy; 2026 Astha Shukla. Built with HTML, CSS & JavaScript.</p>
+    <p>&copy; 2026 Astha Shukla.</p>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

@@ -6,11 +6,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavToggle();
   initActiveNavLink();
-  initScrollReveal();
+  initAOS();
   initTypingEffect();
   initCounters();
   initProjectFilter();
+  initSkillBars();
 });
+
+/* ---- Animate On Scroll (library) ---- */
+function initAOS() {
+  if (typeof AOS === 'undefined') return;
+  AOS.init({
+    duration: 700,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 60,
+  });
+}
 
 /* ---- Mobile nav toggle ---- */
 function initNavToggle() {
@@ -44,31 +56,6 @@ function initActiveNavLink() {
       link.setAttribute('aria-current', 'page');
     }
   });
-}
-
-/* ---- Scroll-reveal via IntersectionObserver ---- */
-function initScrollReveal() {
-  const items = document.querySelectorAll('.reveal');
-  if (!items.length) return;
-
-  if (!('IntersectionObserver' in window)) {
-    items.forEach((el) => el.classList.add('visible'));
-    return;
-  }
-
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  items.forEach((el) => observer.observe(el));
 }
 
 /* ---- Hero typing effect ---- */
@@ -191,6 +178,3 @@ function initProjectFilter() {
     });
   });
 }
-
-// Run skill bar init too (kept separate for clarity, called after DOM ready)
-document.addEventListener('DOMContentLoaded', initSkillBars);

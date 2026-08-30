@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
@@ -32,7 +33,7 @@
 <main>
   <section class="hero">
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
         <p class="hero-tagline">BBA Student — Marketing & Business Management</p>
         <h1 class="hero-title">Hi, I'm <span class="hero-name">Astha</span>.<br>I'm into<br><span class="hero-typed" data-phrases='["Digital Marketing", "Brand Management", "Market Research", "Marketing Analytics"]'></span></h1>
         <p class="hero-desc">Motivated BBA student specialising in Marketing, with a strong interest in consumer behaviour, branding, and marketing analytics. Skilled in communication, presentations and analytical thinking — seeking corporate exposure to bring creative, customer-focused ideas to life.</p>
@@ -55,29 +56,29 @@
           </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="avatar">AS</div>
+      <div class="hero-visual" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+        <div class="avatar"><img src="photo.jpeg" alt="Astha Shukla"></div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <div class="section-title reveal">
+      <div class="section-title" data-aos="fade-up">
         <span class="section-label">Quick Look</span>
         <h2>What I Bring to the Table</h2>
         <p>A snapshot of the skills and strengths that shape how I approach marketing and business problems.</p>
       </div>
       <div class="grid grid-3">
-        <div class="card reveal">
+        <div class="card" data-aos="fade-up" data-aos-delay="0">
           <h3>Marketing Mindset</h3>
           <p>Grounded in digital marketing, consumer behaviour, branding, and marketing analytics fundamentals.</p>
         </div>
-        <div class="card reveal">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h3>Analytical Thinking</h3>
           <p>Comfortable turning survey data into charts and insights using Excel and data visualization.</p>
         </div>
-        <div class="card reveal">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <h3>Creative Communication</h3>
           <p>Confident presenter, using PowerPoint, Canva, and AI tools to tell a clear, visual story.</p>
         </div>
@@ -89,10 +90,11 @@
 <footer class="footer">
   <div class="container">
     <p>Astha Shukla — BBA Marketing, Allenhouse Business School, Kanpur</p>
-    <p>&copy; 2026 Astha Shukla. Built with HTML, CSS & JavaScript.</p>
+    <p>&copy; 2026 Astha Shukla.</p>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
