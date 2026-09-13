@@ -4,24 +4,71 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initNavToggle();
   initActiveNavLink();
-  initAOS();
+  initScrollReveal();
   initTypingEffect();
   initCounters();
   initProjectFilter();
   initSkillBars();
 });
 
-/* ---- Animate On Scroll (library) ---- */
-function initAOS() {
-  if (typeof AOS === 'undefined') return;
-  AOS.init({
-    duration: 700,
-    easing: 'ease-out-cubic',
-    once: true,
-    offset: 60,
+/* ---- Light / dark theme toggle ---- */
+function initThemeToggle() {
+  const toggle = document.querySelector('.theme-toggle');
+  const storageKey = 'astha-theme';
+  const savedTheme = localStorage.getItem(storageKey);
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+  setTheme(initialTheme);
+
+  if (!toggle) return;
+
+  toggle.addEventListener('click', () => {
+    const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(storageKey, nextTheme);
+    setTheme(nextTheme);
   });
+
+  function setTheme(theme) {
+    const isDark = theme === 'dark';
+    document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+    if (!toggle) return;
+    toggle.setAttribute('aria-pressed', String(isDark));
+    toggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+}
+
+/* ---- Scroll reveal animation ---- */
+function initScrollReveal() {
+  const revealEls = document.querySelectorAll('[data-aos]');
+  if (!revealEls.length) return;
+
+  revealEls.forEach((el) => {
+    const delay = parseInt(el.dataset.aosDelay, 10) || 0;
+    el.style.transitionDelay = `${delay}ms`;
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    revealEls.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.18, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  revealEls.forEach((el) => observer.observe(el));
 }
 
 /* ---- Mobile nav toggle ---- */

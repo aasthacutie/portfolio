@@ -6,9 +6,8 @@
 <title>Astha Shukla | Marketing & Business Portfolio</title>
 <meta name="description" content="Astha Shukla — BBA Marketing student portfolio: skills, academic projects, and career interests in digital marketing and brand management.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
@@ -16,17 +15,22 @@
 <header class="navbar">
   <div class="container">
     <a href="index.html" class="nav-brand">Astha <span>Shukla</span></a>
-    <nav class="nav-links">
-      <a href="index.html" data-page="home">Home</a>
-      <a href="about.html" data-page="about">About</a>
-      <a href="skills.html" data-page="skills">Skills</a>
-      <a href="projects.html" data-page="projects">Projects</a>
-      <a href="certifications.html" data-page="certifications">Certifications</a>
-      <a href="contact.html" data-page="contact">Contact</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <nav class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="projects.html" data-page="projects">Projects</a>
+        <a href="certifications.html" data-page="certifications">Certifications</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -34,9 +38,9 @@
   <section class="hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
-        <p class="hero-tagline">BBA Student — Marketing & Business Management</p>
-        <h1 class="hero-title">Hi, I'm <span class="hero-name">Astha</span>.<br>I'm into<br><span class="hero-typed" data-phrases='["Digital Marketing", "Brand Management", "Market Research", "Marketing Analytics"]'></span></h1>
-        <p class="hero-desc">Motivated BBA student specialising in Marketing, with a strong interest in consumer behaviour, branding, and marketing analytics. Skilled in communication, presentations and analytical thinking — seeking corporate exposure to bring creative, customer-focused ideas to life.</p>
+        <p class="hero-tagline">BBA Marketing Student | Allenhouse Business School</p>
+        <h1 class="hero-title">Hi, I'm <span class="hero-name">Astha</span>.<br>I work on<br><span class="hero-typed" data-phrases='["Digital Campaign Ideas", "Consumer Research", "Brand Communication", "Marketing Analytics"]'></span></h1>
+        <p class="hero-desc">Marketing student focused on digital marketing, consumer research, brand communication, and insight-led presentations. I enjoy turning classroom projects, surveys, and business ideas into clear stories that teams can act on.</p>
         <div class="hero-actions">
           <a href="projects.html" class="btn btn-primary">View My Projects</a>
           <a href="contact.html" class="btn btn-outline">Get In Touch</a>
@@ -52,7 +56,7 @@
           </div>
           <div class="stat">
             <div class="stat-number">7+</div>
-            <div class="stat-label">Digital Tools</div>
+            <div class="stat-label">Digital Tools Practiced</div>
           </div>
         </div>
       </div>
@@ -71,14 +75,17 @@
       </div>
       <div class="grid grid-3">
         <div class="card" data-aos="fade-up" data-aos-delay="0">
+          <span class="card-kicker">Positioning</span>
           <h3>Marketing Mindset</h3>
           <p>Grounded in digital marketing, consumer behaviour, branding, and marketing analytics fundamentals.</p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <span class="card-kicker">Research</span>
           <h3>Analytical Thinking</h3>
           <p>Comfortable turning survey data into charts and insights using Excel and data visualization.</p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <span class="card-kicker">Communication</span>
           <h3>Creative Communication</h3>
           <p>Confident presenter, using PowerPoint, Canva, and AI tools to tell a clear, visual story.</p>
         </div>
@@ -94,7 +101,6 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

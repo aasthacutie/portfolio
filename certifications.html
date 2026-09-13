@@ -6,9 +6,8 @@
 <title>Certifications | Astha Shukla</title>
 <meta name="description" content="Certifications and achievements of Astha Shukla, BBA Marketing student.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="certifications">
@@ -16,37 +15,43 @@
 <header class="navbar">
   <div class="container">
     <a href="index.html" class="nav-brand">Astha <span>Shukla</span></a>
-    <nav class="nav-links">
-      <a href="index.html" data-page="home">Home</a>
-      <a href="about.html" data-page="about">About</a>
-      <a href="skills.html" data-page="skills">Skills</a>
-      <a href="projects.html" data-page="projects">Projects</a>
-      <a href="certifications.html" data-page="certifications">Certifications</a>
-      <a href="contact.html" data-page="contact">Contact</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <nav class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="projects.html" data-page="projects">Projects</a>
+        <a href="certifications.html" data-page="certifications">Certifications</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <div class="page-header">
   <div class="container">
     <span class="section-label">Certifications & Achievements</span>
-    <h1>Milestones So Far</h1>
+    <h1>Certifications & Progress</h1>
+    <p class="page-header-desc">Verified learning, classroom participation, and practical marketing work completed so far.</p>
   </div>
 </div>
 
 <main>
-  <section>
+  <section class="achievement-strip">
     <div class="container grid grid-3">
       <div class="counter-item" data-aos="zoom-in" data-aos-delay="0">
         <div class="counter-number" data-target="4">0</div>
         <div class="counter-label">Presentation Topics Delivered</div>
       </div>
       <div class="counter-item" data-aos="zoom-in" data-aos-delay="100">
-        <div class="counter-number" data-target="5">0</div>
-        <div class="counter-label">Digital Tools Mastered</div>
+        <div class="counter-number" data-target="7">0</div>
+        <div class="counter-label">Digital Tools Practiced</div>
       </div>
       <div class="counter-item" data-aos="zoom-in" data-aos-delay="200">
         <div class="counter-number" data-target="2">0</div>
@@ -56,6 +61,24 @@
   </section>
 
   <section>
+    <div class="container certificate-card">
+      <div class="certificate-frame" data-aos="fade-right">
+        <img src="Digital Marketing Certified by HubSpot Academy.png" alt="Digital Marketing Certification from HubSpot Academy">
+      </div>
+      <div data-aos="fade-left" data-aos-delay="100">
+        <span class="section-label">Featured Certificate</span>
+        <h2>Digital Marketing Certified by HubSpot Academy</h2>
+        <p>This certification strengthens Astha's foundation in digital marketing concepts and supports her interest in brand communication, online research, and marketing strategy.</p>
+        <div class="tag-list mt-sm">
+          <span class="tag">Digital Marketing</span>
+          <span class="tag">Online Strategy</span>
+          <span class="tag">Customer Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-compact">
     <div class="container">
       <div class="grid grid-2">
         <div class="card" data-aos="fade-up" data-aos-delay="0">
@@ -86,7 +109,6 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

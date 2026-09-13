@@ -2,9 +2,9 @@
 
 A 6-page personal portfolio website for Astha Shukla, a BBA Marketing student, built with plain HTML, CSS, and JavaScript.
 
-## 🌸 Theme
+## Theme
 
-**Soft Coral & Cream** — a warm, approachable palette (coral accent on cream background) suited to a marketing/branding-focused portfolio. Typography uses Poppins for headings and Inter for body text.
+**Coral, Ink & Fresh Mint** — a warm but more professional palette suited to a marketing/branding-focused portfolio. Typography uses Plus Jakarta Sans for headings and Manrope for body text.
 
 ## 📄 Pages
 
@@ -12,28 +12,28 @@ A 6-page personal portfolio website for Astha Shukla, a BBA Marketing student, b
 |---|---|
 | `index.html` | Hero intro with animated typing effect, quick stats, highlights |
 | `about.html` | Professional summary, education timeline, key strengths, languages & interests |
-| `skills.html` | Marketing, Professional, and Digital skills as animated progress bars |
-| `projects.html` | Academic projects with Research / Presentation filter tabs |
-| `certifications.html` | Certifications & achievements with animated counters |
-| `contact.html` | Phone, email, and location (click-to-call / click-to-email links) |
+| `skills.html` | Marketing, Professional, and Digital skills as polished skill pills |
+| `projects.html` | Academic project case studies with Research / Presentation filter tabs |
+| `certifications.html` | HubSpot certificate, achievements, and animated counters |
+| `contact.html` | Email and location contact details |
 
-## ✨ Features
+## Features
 
 - Fully responsive layout (mobile hamburger nav, fluid grid)
-- Scroll-reveal animations on section entry
+- Local scroll-reveal animations on section entry
 - Animated hero typing effect
-- Animated skill bars and counters
+- Animated counters
 - Project category filtering
-- Pure CSS initials avatar (no image assets required)
+- Photo-based profile sections and visible certificate asset
 - Zero dependencies beyond Google Fonts + normalize.css (via CDN)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (custom properties, Flexbox, Grid)
 - Vanilla JavaScript (`IntersectionObserver`, no frameworks)
 
-## 🚀 Running Locally
+## Running Locally
 
 No build step required.
 
@@ -45,7 +45,7 @@ No build step required.
    ```
    or use VS Code's "Live Server" extension.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 /
@@ -57,14 +57,15 @@ No build step required.
 ├── contact.html
 ├── styles.css
 ├── main.js
+├── photo.jpeg
+├── Digital Marketing Certified by HubSpot Academy.png
 ├── AGENTS.md
 └── README.md
 ```
 
 See [AGENTS.md](./AGENTS.md) for coding conventions and structure notes if extending the site.
 
-## 📬 Contact
+## Contact
 
 - **Email:** aasthashuklaastha44@gmail.com
-- **Phone:** +91-8810741101
 - **Location:** Kanpur, Uttar Pradesh
